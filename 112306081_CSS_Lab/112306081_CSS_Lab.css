@@ -1,0 +1,67 @@
+ /* General styles */
+body {
+    color: rgb(129, 210, 233);
+    background-color: #d03232;
+    font-family: "Arial", sans-serif;
+    margin-top: 40px; /* Adjusted to make space for the fixed navbar */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+.navbar li {
+    display: block;
+    color: rgb(25, 205, 25)55, 255, 255);
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navbar li:hover {
+    background-color: #555;
+}
+
+h1 {
+    font-family: "Verdana", sans-serif;
+}
+
+/* Drop-down menu styles */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    background-color: #333;
+    color: yellowgreen;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+/* Media Queries */
+@media all {
+    /* Styles for all devices */
+    p {
+        font-size: 16px;
+    }
+}
+
+@media print {
+    /* Styles for printing */
+    body {
+        color: rgb(229, 223, 223);
+        background-color: rgb(14, 13, 13)3, 19, 19);
+    }
+
+    h1 {
+        color: #333;
+    }
+}
